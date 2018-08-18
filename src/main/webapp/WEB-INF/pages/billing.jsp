@@ -39,11 +39,19 @@
     <div class="panel panel-danger">
         <div class="panel-heading">Billing</div>
         <div class="panel-body">
-            Billing
-            <br>
-            <br>
-            <form:form method="post" action="/billing">
-                <button formaction="/billing" type="submit" class="btn btn-info">Billing</button>
+            <form:form method="post" action="/billing/post/request" modelAttribute="user">
+
+                <form:hidden path="id"/>
+                <form:hidden path="name"/>
+                <form:hidden path="debit"/>
+
+                User:
+                <br> id = "${user.id}"
+                <br> name = "${user.name}"
+                <br> debit = "${user.debit}"
+                <br>
+                <br>
+                <button type="submit" class="btn btn-info">post Request</button>
             </form:form>
         </div>
     </div>
