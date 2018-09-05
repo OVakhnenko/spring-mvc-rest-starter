@@ -54,7 +54,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Spring 4 dependencies -->
+        <!-- spring 4 dependencies -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
